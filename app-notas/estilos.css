@@ -7,7 +7,7 @@
   --color-error: #b42318;
   --color-exito: #067647;
   --color-peligro: #b42318;
-  --espacio: 16px;
+  --espacio: 15x;
 }
 
 * { box-sizing: border-box; }

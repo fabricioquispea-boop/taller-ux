@@ -2,8 +2,7 @@
 
 Aplicación de notas rediseñada aplicando heurísticas de usabilidad de Nielsen, las leyes de Fitts, Hick y Miller, y criterios de accesibilidad.
 
-Página publicada: https://TU-USUARIO.github.io/taller-ux/
-
+Página publicada: https://fabricioquispea-boop.github.io/taller-ux/blob/main/app-notas/README.md
 ## Contenido
 
 - `index.html`, `estilos.css`, `app.js`: versión rediseñada
@@ -12,7 +11,7 @@ Página publicada: https://TU-USUARIO.github.io/taller-ux/
 
 ## Cambios aplicados
 
-| Principio | Cambio |
+| Principios| Cambio |
 |---|---|
 | Visibilidad del estado | Mensaje después de agregar, eliminar y restaurar una nota |
 | Prevención de errores | El botón se activa solo si hay datos reales; no se pueden agregar notas vacías |
