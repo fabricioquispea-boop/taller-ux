@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis notas</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <main class="tarjeta">
+    <img src="img/banner.png" alt="Escritorio con cuaderno y laptop para organizar notas">
+    <h1>Mis notas</h1>
+    <p class="ayuda">Escribe una nota y elige su categoría. Todos los campos son obligatorios.</p>
+
+    <form id="formulario" novalidate>
+      <fieldset>
+        <legend>1. Tu nota</legend>
+        <label for="titulo">Título</label>
+        <input id="titulo" type="text" maxlength="60" placeholder="Ej.: Reunión del lunes" required>
+
+        <label for="texto">Contenido</label>
+        <input id="texto" type="text" maxlength="200" placeholder="Ej.: Llevar el avance del proyecto" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>2. Categoría</legend>
+        <label for="categoria">Elige una categoría</label>
+        <select id="categoria" required>
+          <option value="">Selecciona una opción</option>
+          <optgroup label="Vida diaria">
+            <option>Personal</option> <option>Casa</option> <option>Compras</option>
+          </optgroup>
+          <optgroup label="Trabajo y estudio">
+            <option>Trabajo</option> <option>Estudio</option> <option>Proyectos</option>
+          </optgroup>
+          <optgroup label="Otros">
+            <option>Ideas</option> <option>Salud</option> <option>Viajes</option>
+          </optgroup>
+        </select>
+      </fieldset>
+
+      <p id="mensaje" class="mensaje" role="status"></p>
+
+      <div class="acciones">
+        <button type="submit" id="agregar" class="boton-principal" disabled>Agregar nota</button>
+        <button type="reset" class="boton-secundario">Limpiar formulario</button>
+      </div>
+    </form>
+
+    <section aria-labelledby="titulo-lista">
+      <h2 id="titulo-lista">Notas guardadas <span id="contador">(0)</span></h2>
+      <p id="vacio" class="ayuda">Aún no tienes notas. Agrega la primera arriba.</p>
+      <ul id="lista" class="lista"></ul>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
