@@ -1,7 +1,7 @@
 # taller-ux
 Formulario de inscripcion redisenado con principios de UX/UI
 
-Pagina publicada: https://TU-USUARIO.github.io/taller-ux/
+Pagina publicada: https://fabricioquispea-boop.github.io/taller-ux/
  
 ## Cambios aplicados
  
